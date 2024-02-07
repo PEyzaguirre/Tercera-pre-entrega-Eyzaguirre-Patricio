@@ -1,0 +1,20 @@
+{% extends 'Flujos/home.html' %}
+
+
+{% block titulo %}
+    <h1 class="mt-4">Agregar Repartidores</h1>
+    <ol class="breadcrumb mb-1">
+        <li class="breadcrumb-item active">&nbsp</li>
+    </ol>
+{% endblock titulo %}
+    
+
+{% block contenido %}    
+    <form action="" method="post">
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <input type="submit" value="Grabar">
+    </form>
+{% endblock contenido %}
